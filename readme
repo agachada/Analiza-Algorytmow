@@ -1,0 +1,6 @@
+Program rozwiązuje problem obliczania wody zgromadzonej na prostopadłościanach, kiedy caly teren został zalany wodą.
+Program wystarczy pobrać i włączyć. Składa się z 3 plików źródłowych - maina i 2 klas, z których każda impementuje algorytm na swój sposób. Szybszy sposób wykorzystuje rekurencję, a wolniejszy jest algorytmem iteracyjnym.
+Wyświetlą się trzy opcje uruchomienia, po naciśnięciu 1 uruchomią się 4 testy na niewielkich danych. 2 - program wygreneruje macierz o zadanych wymiarach i prostopadłościanach o wysokościach od 1 do 10 i 
+wypisze macierz na ekran, apotem obliczy zawartość zgromdzonej wody.
+3 - program zapisze macierz do pliku test.txt, pokaże czas w jakim obydwa algorytmy policzyły objętość wody zgromadzonej na prostopadłościanach.
+Następnie się wyłączy.
