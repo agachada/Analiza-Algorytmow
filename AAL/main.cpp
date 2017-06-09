@@ -137,7 +137,7 @@ int main() {
 	int choice = 2;
 	N = 0;
 	M = 0;
-	while (1) {
+	while (choice != 0) {
 		cout << "Aby wybrac testy wpisz 1, wygeneruj i wypisz macierz - 2, wygreneruj macierz do pliku - 3" << endl;
 		map.clear();
 		cin >> choice;
@@ -172,6 +172,8 @@ int main() {
 			cout << "Drugi algorytm potrzebowal: " << duration_cast<microseconds>(t2 - t1).count() << " mikrosekund." << endl;
 			cout << "Pierwszy algorytm: zebrano: " << x << " jednostek wody." << endl;
 			cout << "Drugi algorytm: zebrano: " << z << " jednostek wody." << endl;
+			cout << "Koniec programu" << endl;
+			choice = 0;
 			break;
 		}
 		default:
@@ -183,7 +185,7 @@ int main() {
 			M = read_input();
 			cout << "Liczy..." << endl;
 			generateMap();
-			
+			saveToFile();
 
 			high_resolution_clock::time_point t1 = high_resolution_clock::now();
 			int x = betterSolution.trapRainWater(map);
@@ -197,7 +199,8 @@ int main() {
 			cout << "Drugi algorytm potrzebowal: " << duration_cast<microseconds>(t2 - t1).count() << " mikrosekund." << endl;
 			cout << "Pierwszy algorytm: zebrano: " << x << " jednostek wody." << endl;
 			cout << "Drugi algorytm: zebrano: " << z << " jednostek wody." << endl;
-
+			cout << "Koniec programu" << endl;
+			choice = 0;
 			break;
 
 		}
